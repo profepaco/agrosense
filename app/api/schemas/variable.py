@@ -2,6 +2,8 @@ from pydantic import BaseModel
 from datetime import datetime
 from typing import List, Optional
 
+from app.api.schemas.lectura import LecturaResponse
+
 class VariableBase(BaseModel):
     nombre: str
     unidad: str

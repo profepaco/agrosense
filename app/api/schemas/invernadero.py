@@ -2,6 +2,9 @@ from pydantic import BaseModel
 from datetime import datetime
 from typing import List, Optional
 
+from app.api.schemas.planta import PlantaResponse
+from app.api.schemas.sensor import SensorResponse
+
 class InvernaderoBase(BaseModel):
     nombre: str
     ubicacion: str
